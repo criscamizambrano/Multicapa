@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrarse </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/iconos.css">
+    <link rel="stylesheet" href="css/estilo_api.css">
+</head>
+<body>
+        <nav id="Cabezal"><script type="text/javascript">
+            function startTime(){
+            today=new Date();
+            h=today.getHours();
+            m=today.getMinutes();
+            s=today.getSeconds();
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+            t=setTimeout('startTime()',500);}
+            function checkTime(i)
+            {if (i<10) {i="0" + i;}return i;}
+            window.onload=function(){startTime();}
+            </script>
+            <div id="reloj" style="padding-top: 2.7%" class="barraSuperior" ></div>
+            <img src="img/small_logo.jpg" width="327" height="109" id="logoP">
+            <a id="RegistrarUsuario" style="padding-top: 2.7%" class="barraSuperior" style="padding-top: 2.7%" href="Iniciar Sesion.php">Iniciar Sesion</a>
+        </nav>
+        <nav id="menuOpciones" > 
+            <a href=# class="menuAcceso" ><b>Platos</b></a>
+            <a href=# class="menuAcceso"><b>Recetas</b></a>
+            <a href=# class="menuAcceso"><b>Consejos</b></a>
+            <a href=# class="menuAcceso"><b>Contacto</b></a>
+        </nav>
+        <h2 id="mensajeBienvenida" >¡Registro!</h2>
+        
+        <div id="main-container">
+      <div id="flag-container">
+        <img src="" alt="">
+      </div>
+      <div id="info-container">
+        <select id="countries"></select>
+        <p>Capital: <span id="capital"></span></p>
+        <p>Dialing Code: <span id="dialing-code"></span></p>
+        <p>Population: <span id="population"></span></p>
+        <p>Currencies: <span id="currencies"></span></p>
+        <p>Region: <span id="region"></span></p>
+        <p>Subregion: <span id="subregion"></span></p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+        
+        <div class="social"><ul>
+            <li><a href="https://www.facebook.com/cineplay.sas.1" class="icon-facebook2"></a></li>
+          <li><a href="https://www.instagram.com/cineplaysas/" class="icon-instagram"></a></li>
+          <li><a href="https://twitter.com/ACineplay" class="icon-twitter"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCazEWIiqMnCGjhil7y0L6gw?view_as=subscriber" class="icon-youtube"></a></li> 
+        </ul></div>
+</body>
+</html>
